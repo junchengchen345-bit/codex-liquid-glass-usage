@@ -28,7 +28,7 @@
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "recharts": "^3.9.2",
-    "vite": "6.4.2"
+    "vite": "6.4.3"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2.11.4"
