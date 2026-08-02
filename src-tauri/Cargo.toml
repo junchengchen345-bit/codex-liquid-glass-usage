@@ -1,0 +1,31 @@
+[package]
+name = "codex-liquid-glass-usage"
+version = "0.1.0"
+description = "An unofficial macOS Liquid Glass dashboard for local Codex usage and rate limits."
+authors = ["Codex Liquid Glass Usage contributors"]
+license = "MIT"
+repository = "https://github.com/junchengchen345-bit/codex-liquid-glass-usage"
+edition = "2021"
+rust-version = "1.77.2"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "codex_liquid_glass_usage_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.6.3", features = [] }
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+log = "0.4"
+tauri = { version = "2.11.3", features = ["macos-private-api"] }
+tauri-plugin-log = "2"
+tokio = { version = "1", features = ["io-util", "process", "rt", "sync", "time"] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2-web-kit = { version = "0.3.2", default-features = false, features = ["objc2-app-kit", "WKWebView"] }
+window-vibrancy = "=0.8.0"

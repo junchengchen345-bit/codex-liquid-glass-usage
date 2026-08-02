@@ -1,0 +1,35 @@
+# JavaScript
+/node_modules/
+/dist/
+/.npm-cache/
+/.npmrc
+*.log
+
+# Rust / Tauri
+/src-tauri/target/
+/src-tauri/gen/schemas/
+
+# Apple / Xcode
+.DS_Store
+**/.DS_Store
+**/xcuserdata/
+*.xcuserstate
+DerivedData/
+*.xcarchive
+*.dSYM/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Private design-review material
+/qa/
+/public/qa/
+/qa-*.png
+/design-qa.md
+
+# Local working instructions and source images with unverified provenance
+/AGENTS.md
+/src/assets/chromatic-metal-bg.png
+/src/assets/codex-icon.png

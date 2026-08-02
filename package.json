@@ -1,0 +1,39 @@
+{
+  "name": "codex-token-glass-widget",
+  "version": "0.1.0",
+  "description": "An unofficial macOS Liquid Glass dashboard for local Codex usage and rate limits.",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junchengchen345-bit/codex-liquid-glass-usage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/junchengchen345-bit/codex-liquid-glass-usage/issues"
+  },
+  "homepage": "https://github.com/junchengchen345-bit/codex-liquid-glass-usage#readme",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "desktop:dev": "tauri dev",
+    "desktop:build": "tauri build --bundles app"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "@tauri-apps/api": "^2.11.1",
+    "@vitejs/plugin-react": "5.0.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "recharts": "^3.9.2",
+    "vite": "6.4.2"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

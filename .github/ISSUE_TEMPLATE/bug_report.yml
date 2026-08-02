@@ -1,0 +1,37 @@
+name: Bug report
+description: Report a reproducible problem without sharing credentials or private account data.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach auth files, tokens, raw account responses, or screenshots containing private data.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.1.0 or a commit SHA
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options:
+        - Tauri macOS dashboard
+        - Browser preview
+        - WidgetKit companion
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Include concise reproduction steps and the expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: macOS, Codex CLI/app, Node, Rust, and Xcode versions as relevant. Remove usernames and paths.
